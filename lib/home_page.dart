@@ -1,31 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:travello/sections/app_bar_section.dart';
+import 'package:travello/sections/option_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
+        backgroundColor: Colors.white,
         body: CustomScrollView(
-      slivers: [
-        const SliverAppBar(
-          flexibleSpace: FlexibleSpaceBar(
-            background: AppBarSection(),
-          ),
-          floating: true,
-          expandedHeight: 150.0,
-        ),
-        SliverList(
-          
-          delegate: SliverChildBuilderDelegate(
-           
-            (context, index) => ListTile(title: Text('Item #$index')),
-           
-            childCount: 1000,
-          ),
-        )
-      ],
-    ));
+          slivers: [
+            SliverAppBar(
+              backgroundColor: Colors.white,
+              flexibleSpace: FlexibleSpaceBar(
+                background: AppBarSection(),
+              ),
+              floating: true,
+              expandedHeight: 150.0,
+            ),
+            SliverToBoxAdapter(child: OptionSection()),
+          ],
+        ));
   }
 }
