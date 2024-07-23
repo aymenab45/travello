@@ -20,7 +20,7 @@ class OptionCardWidget extends StatelessWidget {
                 color: Color.fromARGB(57, 0, 0, 0),
                 blurRadius: 8,
                 spreadRadius: 0.5,
-                offset: Offset(-2, 2),
+                offset: Offset(0, 5),
                 blurStyle: BlurStyle.outer),
           ]),
       child: Column(
