@@ -11,26 +11,21 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
         backgroundColor: Colors.white,
-        body: CustomScrollView(
-          slivers: [
-            SliverAppBar(
-              backgroundColor: Colors.white,
-              flexibleSpace: FlexibleSpaceBar(
-                background: AppBarSection(),
-              ),
-              floating: true,
-              expandedHeight: 150.0,
-            ),
-            SliverToBoxAdapter(child: OptionSection()),
-            SliverToBoxAdapter(
-                child: PopularPackageSection(
+        body: Column(
+          children: [
+             AppBarSection(),
+              
+              
+             OptionSection(),
+           
+               PopularPackageSection(
               title: 'Popular Packages',
-            )),
-            SliverToBoxAdapter(child: LocationSection()),
-            SliverToBoxAdapter(
-                child: PopularPackageSection(
+            ),
+            LocationSection(),
+        
+              PopularPackageSection(
               title: 'Best Hotels',
-            )),
+            )
           ],
         ));
   }

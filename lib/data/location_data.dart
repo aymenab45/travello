@@ -15,38 +15,28 @@ const urlPrefix =
     'https://docs.flutter.dev/cookbook/img-files/effects/parallax';
 const locations = [
   Location(
-    name: 'Mount Rushmore',
-    place: 'U.S.A',
-    imageUrl: '$urlPrefix/01-mount-rushmore.jpg',
-  ),
-  Location(
-    name: 'Gardens By The Bay',
-    place: 'Singapore',
-    imageUrl: '$urlPrefix/02-singapore.jpg',
-  ),
-  Location(
     name: 'Machu Picchu',
     place: 'Peru',
-    imageUrl: '$urlPrefix/03-machu-picchu.jpg',
+    imageUrl: 'assets/images/route-du-mont-saint-michel-au-coucher-du-soleil-normandie-france.jpg',
   ),
   Location(
     name: 'Vitznau',
     place: 'Switzerland',
-    imageUrl: '$urlPrefix/04-vitznau.jpg',
+    imageUrl: 'assets/images/prise-vue-au-grand-angle-seul-arbre-poussant-sous-ciel-assombri-pendant-coucher-soleil-entoure-herbe.jpg',
   ),
   Location(
     name: 'Bali',
     place: 'Indonesia',
-    imageUrl: '$urlPrefix/05-bali.jpg',
+    imageUrl: 'assets/images/pedro-lastra-Nyvq2juw4_o-unsplash.jpg',
   ),
   Location(
     name: 'Mexico City',
     place: 'Mexico',
-    imageUrl: '$urlPrefix/06-mexico-city.jpg',
+    imageUrl: 'assets/images/henning-witzel-ukvgqriuOgo-unsplash.jpg',
   ),
   Location(
     name: 'Cairo',
     place: 'Egypt',
-    imageUrl: '$urlPrefix/07-cairo.jpg',
+    imageUrl: 'assets/images/07-cairo.jpg',
   ),
 ];

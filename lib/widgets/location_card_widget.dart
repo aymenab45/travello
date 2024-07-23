@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:travello/parallax_flow_delegate.dart';
 
 class LocationCardWidget extends StatelessWidget {
   final String name;
   final String place;
   final String image;
-  const LocationCardWidget(
+  LocationCardWidget(
       {super.key,
       required this.name,
       required this.place,
       required this.image});
-
+  final GlobalKey _backgroundImageKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -30,7 +31,7 @@ class LocationCardWidget extends StatelessWidget {
         children: [
           Stack(
             children: [
-              _buildImage(),
+              _buildImage(context),
               _buildSaveButton(),
               _buildRatingStar(),
             ],
@@ -41,16 +42,24 @@ class LocationCardWidget extends StatelessWidget {
     );
   }
 
-  Widget _buildImage() {
+  Widget _buildImage(BuildContext context) {
     return Container(
       height: 250,
       padding: const EdgeInsets.all(10),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(14),
-        child: Image.network(
-          image,
-          fit: BoxFit.fill,
-        ),
+        child: Flow(
+            delegate: ParallaxFlowDelegate(
+                backgroundImageKey: _backgroundImageKey,
+                scrollable: Scrollable.of(context),
+                listItemContext: context),
+            children: [
+              Image.asset(
+                key: _backgroundImageKey,
+                image,
+                fit: BoxFit.cover,
+              ),
+            ]),
       ),
     );
   }
