@@ -9,6 +9,7 @@ class LocationSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 340,
+        
         margin: const EdgeInsets.only(top: 20, left: 16, right: 17),
         child: ListView.builder(
             itemCount: locations.length,
