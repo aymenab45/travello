@@ -20,8 +20,8 @@ class UserInofrmationWidget extends StatelessWidget {
         ),
         trailing: CircleAvatar(
             maxRadius: 25,
-            backgroundImage: NetworkImage(
-                "https://docs.flutter.dev/cookbook/img-files/effects/parallax/01-mount-rushmore.jpg")),
+            backgroundImage: AssetImage(
+                "assets/images/simon-berger-aZjw7xI3QAA-unsplash.jpg")),
       ),
     );
   }

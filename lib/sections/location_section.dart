@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:travello/data/location_data.dart';
 import 'package:travello/widgets/location_card_widget.dart';
 
