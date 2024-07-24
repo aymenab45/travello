@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class PopularPackageSection extends StatelessWidget {
   final String title;
@@ -10,7 +11,8 @@ class PopularPackageSection extends StatelessWidget {
       margin: const EdgeInsets.only(left: 24, right: 24, top: 30),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [_buildText(), _buildButton()],
+        children:
+            [_buildText(), _buildButton()].animate().slideX(duration: 300.ms),
       ),
     );
   }

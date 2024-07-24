@@ -12,19 +12,19 @@ class HomePage extends StatelessWidget {
     return const Scaffold(
         backgroundColor: Colors.white,
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-             AppBarSection(),
-              
-              
-             OptionSection(),
-           
-               PopularPackageSection(
+            AppBarSection(),
+            OptionSection(),
+            PopularPackageSection(
               title: 'Popular Packages',
             ),
             LocationSection(),
-        
-              PopularPackageSection(
-              title: 'Best Hotels',
+            Padding(
+              padding: EdgeInsets.only(left: 5),
+              child: PopularPackageSection(
+                title: 'Best Hotels',
+              ),
             )
           ],
         ));
