@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:travello/data/location_data.dart';
 import 'package:travello/widgets/location_card_widget.dart';
 
@@ -9,7 +10,6 @@ class LocationSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 340,
-        
         margin: const EdgeInsets.only(top: 20, left: 16, right: 17),
         child: ListView.builder(
             itemCount: locations.length,

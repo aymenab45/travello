@@ -31,9 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  flutter_animate:
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
@@ -63,8 +61,8 @@ flutter:
     - assets/images/07-cairo.jpg
     - assets/images/henning-witzel-ukvgqriuOgo-unsplash.jpg
     - assets/images/pedro-lastra-Nyvq2juw4_o-unsplash.jpg
-    - assets/images/prise-vue-au-grand-angle-seul-arbre-poussant-sous-ciel-assombri-pendant-coucher-soleil-entoure-herbe.jpg
-    - assets/images/route-du-mont-saint-michel-au-coucher-du-soleil-normandie-france.jpg
+    - assets/images/simon-berger-aZjw7xI3QAA-unsplash.jpg
+    - assets/images/martin-kleppe-ylT2fMmgScI-unsplash.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

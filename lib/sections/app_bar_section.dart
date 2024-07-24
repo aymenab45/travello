@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:travello/widgets/search_field_widget.dart';
 import 'package:travello/widgets/user_inofrmation_widget.dart';
 
@@ -7,8 +8,10 @@ class AppBarSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [UserInofrmationWidget(), SearchFieldWidget()],
+    return Column(
+      children: [const UserInofrmationWidget(), const SearchFieldWidget()]
+          .animate()
+          .slideX(duration: 300.ms),
     );
   }
 }
